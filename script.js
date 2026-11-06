@@ -3064,23 +3064,7 @@ function handleGamepadInput() {
 
     game.gamepad.lastButtonStates = currentButtonStates;
 }
-// ==========================================
-// CONFIGURACIÓN AUTOMÁTICA DE PHOTON
-// ==========================================
-const appId = "f0e6c485-6d70-4298-b182-a539a6f52b66";
-const client = new Photon.LoadBalancing.LoadBalancingClient(Photon.ConnectionProtocol.Wss, appId, "1.0");
 
-// Esto se ejecuta solo cada vez que el servidor cambia de estado
-client.onStateChange = function (state) {
-    console.log("Estado de Photon:", state);
-    
-    if (state === Photon.LoadBalancing.LoadBalancingClient.State.ConnectedToMaster) {
-        console.log("✅ ¡Conectado al Master oficial!");
-    }
-};
-
-// CONEXIÓN AUTOMÁTICA (Sin botones)
-client.connectToRegionMaster("eu");
 // --- LÓGICA DE LA NUEVA TIENDA DE PARTIDA (RUN SHOP) ---
 
 // =========================================================
