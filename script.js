@@ -25,8 +25,6 @@ function updateFPS() {
 
     fpsDisplay.innerText = `FPS: ${fps}`;
 }
-// Llamar al arrancar
-window.addEventListener('load', checkLicense);
 
 // --- CORE GAME SETUP ---
 const canvas = document.getElementById('gameCanvas');
