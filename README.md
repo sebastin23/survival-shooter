@@ -1,2 +1,2 @@
 # survival-shooter link
-https://xmayor-sys.github.io/survival-shooter/
+https://sebastin23.github.io/survival-shooter/
